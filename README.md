@@ -1,8 +1,8 @@
 # Llama2-7B for Fact-checking
-Triển khai Llama2-7B cho bài toán xác thực tin tức
+Implementation of Llama2-7B for evidence-based fact-checking.
 
 # Overview
-Xây dựng và triển khai mô hình Llama2-7B, tinh chỉnh bằng qLoRA cho bài toán xác thực tin tức. Mô hình có hiệu suất đáng kể so với các mô hình học sâu cơ sở và mô hình Llama2-7B chưa tinh chỉnh trên hai tập dữ liệu công khai về xác thực tin tức là LIAR dataset và RAWFC dataset.
+"Building and deploying a Llama2-7B model fine-tuned with QLoRA for the task of fact-checking. The instruction-tuning dataset was constructed and preprocessed based on two public fact-checking datasets: the LIAR dataset and the RAWFC dataset. The resulting model demonstrates significant performance improvements compared to baseline deep learning models and the original (unfine-tuned) Llama2-7B.
 
 ## Baselines Evaluation
 Performance Table of My Model and Baseline Models. This shows that my model has an improvement in Precision, Recall and F1-score :
@@ -14,17 +14,19 @@ Performance Table of My Model and Baseline Models. This shows that my model has 
 | dEFEND   | 23.09     | 18.56    | 17.51     | 44.93    | 43.26   | 44.07    |
 | CofCED   | 29.48      | 29.55    | 28.93     | 52.99    | 50.99   | 51.07    |
 | Llama2-7B    | 15.87     | 20.69    | 12.24     | 33.50    | 32.55    | 26.43    |
-| Llama2-7B (qLoRA)   | **32.24**    | **31.96**   | **30.32**   | **55.11** | **54.50** | **55.40** |
+| Llama2-7B (QLoRA)   | **32.24**    | **31.96**   | **30.32**   | **55.11** | **54.50** | **55.40** |
 
 ## Dataset
 My model was trained and evaluated on the `LIAR-RAW` and `RAWFC` datasets. For detailed information about these two datasets, please refer to the following paper: [links](https://arxiv.org/pdf/2209.14642).
 
 The raw datasets can be downloaded at: [CofCED](https://github.com/Nicozwy/CofCED)
 
-Tôi đã tiền xử lý và làm sạch dữ liệu tại `dataProcessing.py`. Dữ liệu được làm sạch có tại `cleanData`.
+Data preprocessing and cleaning were performed in `dataProcessing.py`. The instruction-tuning dataset is available in the `cleanData`.
 
 ## Models
-Mô hình của tôi sử dụng 'Llama2-7B' đã được tinh chỉnh bằng tinh chỉnh có hướng dẫn dựa trên phương pháp lượng tử hóa LoRA 8-bit. 
+My model uses the 'Llama2-7B' model fine-tuned with instruction tuning based on 8-bit quantized LoRA.
+
+To apply the quantization-based LoRA method (`qLoRA`), you need to have [Bitsandbytes](https://github.com/bitsandbytes-foundation/bitsandbytes) library installed.
 <p align="center">
     <br>
     <a href="[https://github.com/safe](https://github.com/ntn2110q1/Llama2-7B---Fact-checking)">
