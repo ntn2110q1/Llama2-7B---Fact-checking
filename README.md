@@ -28,7 +28,10 @@ Mô hình của tôi sử dụng 'Llama2-7B' đã được tinh chỉnh bằng t
 <p align="center">
     <br>
     <a href="[https://github.com/safe](https://github.com/ntn2110q1/Llama2-7B---Fact-checking)">
-        <img src="https://github.com/ntn2110q1/PGSN---FND/blob/main/picture/FrameWork.png" width="1000"/>
+        <img src="https://github.com/ntn2110q1/Llama2-7B---Fact-checking/blob/main/frameWork.png" width="1000"/>
     </a>
     <br>
 <p>
+
+## Acknowledgment
+This project is built based on [Alpaca-Lora](https://github.com/tloen/alpaca-lora.git).
