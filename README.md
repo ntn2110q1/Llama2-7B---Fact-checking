@@ -25,3 +25,10 @@ Tôi đã tiền xử lý và làm sạch dữ liệu tại `dataProcessing.py`.
 
 ## Models
 Mô hình của tôi sử dụng 'Llama2-7B' đã được tinh chỉnh bằng tinh chỉnh có hướng dẫn dựa trên phương pháp lượng tử hóa LoRA 8-bit. 
+<p align="center">
+    <br>
+    <a href="[https://github.com/safe](https://github.com/ntn2110q1/Llama2-7B---Fact-checking)">
+        <img src="https://github.com/ntn2110q1/PGSN---FND/blob/main/picture/FrameWork.png" width="1000"/>
+    </a>
+    <br>
+<p>
