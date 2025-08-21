@@ -2,7 +2,7 @@
 Implementation of Llama2-7B for evidence-based fact-checking.
 
 # Overview
-"Building and deploying a Llama2-7B model fine-tuned with QLoRA for the task of fact-checking. The instruction-tuning dataset was constructed and preprocessed based on two public fact-checking datasets: the LIAR dataset and the RAWFC dataset. The resulting model demonstrates significant performance improvements compared to baseline deep learning models and the original (unfine-tuned) Llama2-7B.
+Building and deploying a Llama2-7B model fine-tuned with QLoRA for the task of fact-checking. The instruction-tuning dataset was constructed and preprocessed based on two public fact-checking datasets: the LIAR dataset and the RAWFC dataset. The resulting model demonstrates significant performance improvements compared to baseline deep learning models and the original (unfine-tuned) Llama2-7B.
 
 ## Baselines Evaluation
 Performance Table of My Model and Baseline Models. This shows that my model has an improvement in Precision, Recall and F1-score :
